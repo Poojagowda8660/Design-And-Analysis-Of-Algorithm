@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #define size 100
 int count=0;
-void selectionsort(int A[size],int n)
+void insertionsort(int A[size],int n)
 {
     int i,j,temp,item;
     for(i=0;i<=n-1;i++)
@@ -25,7 +25,7 @@ scanf("%d",&n);
 printf("\nRead array elements\n");
 for(i=0;i<=n-1;i++)
     scanf("%d",&A[i]);
-selectionsort(A,n);
+insertionsort(A,n);
 printf("\nSorted elements are\n");
 for(i=0;i<=n-1;i++)
     printf("%d\t",A[i]);
