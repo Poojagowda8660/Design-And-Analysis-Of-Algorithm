@@ -9,6 +9,7 @@ void insertionsort(int A[size],int n)
     {
         item=A[i];
         j=i-1;
+        count++;
       while(j>=0 && A[j]>item)
       {
           A[j+1]=A[j];
